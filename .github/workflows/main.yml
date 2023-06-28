@@ -5,16 +5,20 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    name: Jobs to update datas
+    name: Full-year calendar
     runs-on: ubuntu-latest
     steps:
-      # Snake Animation
-      - uses: Platane/snk@master
-        id: snake-gif
+      # Green Towers
+      - uses: lowlighter/metrics@latest
+        id: tower-gif
   
         with:
           github_user_name: paramsgit
-          svg_out_path: dist/github-contribution-grid-snake.svg
+          filename: metrics.plugin.isocalendar.fullyear.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
       - uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
           target_branch: output
