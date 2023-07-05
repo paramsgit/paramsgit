@@ -1,0 +1,20 @@
+name: Generate Datas
+on:
+  schedule: # execute every 12 hours
+    - cron: "* */12 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    name: LeetCode
+    runs-on: ubuntu-latest
+    steps:
+      # Green Towers
+      - uses: lowlighter/metrics@latest
+        id: leetcode-gif
+  
+        with:
+          filename: metrics.plugin.leetcode.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_leetcode: yes
+          plugin_leetcode_sections: solved, skills, recent
