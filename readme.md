@@ -55,7 +55,7 @@
   </ul>
 </div>
 <!--tech stack icons-->
-<
+
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=python,c,cpp,js,html,css,bootstrap,tailwind,react,typescript,nodejs,expressjs,mongodb,django,flask,selenium,graphql,postman,photoshop,vscode,linux,git,github,nginx,aws,docker,jenkins,bash,&perline=14" />
